@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let up = parseInt(prompt('Nhập khoảng trên'));
+    let down = parseInt(prompt('Nhập khoảng dưới'));
+    let num = Math.floor((Math.random()*up)+down);
+    for (i = 0; i < 3; i++) {
+        let guess = parseInt(prompt('Let guess:'));
+        if (guess === num){
+            alert('win');
+            break;
+        } else if (guess < num){
+            alert('too low');
+        } else alert('too high');
+    }
+</script>
+</body>
+</html>
