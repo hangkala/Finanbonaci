@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [0,1,1];
+    for(i = 2; i < 20; i++){
+        arr[i] = arr[i-1]+arr[i-2];
+        arr.push(arr[i]);
+    }
+    for (j = 0; j < 20; j++){
+        if (arr[j]%5 === 0){
+            alert(arr[j]);
+            break;
+        }
+    }
+    //console.log(arr);
+</script>
+</body>
+</html>
